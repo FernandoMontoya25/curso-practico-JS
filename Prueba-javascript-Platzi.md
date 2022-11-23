@@ -272,27 +272,14 @@ while (i >= 2) {
 > 
 
 ```jsx
-//Basic Math Quiz
-let num = 10;
-let num2 = 10;
-const result = num + num2;
-
-let questions = {
-  q1: `Cuanto es ${num} + ${num2}`
-}
-
-function Quizzer() {
-
-  let userInput = prompt(questions.q1);
-
-  if (userInput == result) {
-    alert("Felicitaciones, respondiste correctamente el desafio 😎");
-  } else {
-    alert("lamentablemente, tu respuesta es incorrecta, sigue practicando ❌!");
+while(respuesta !== 4){
+  var respuesta = Number(prompt("Cuanto es 2 + 2"));
+  if(respuesta == 4){
+    console.log("Felicidades lo lograste");
+  } else{
+    console.log("Intentalo de nuevo");
   }
-}
-
-Quizzer();
+};
 ```
 
 ## Listas
