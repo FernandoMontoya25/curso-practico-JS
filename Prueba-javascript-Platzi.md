@@ -287,18 +287,32 @@ while(respuesta !== 4){
 ### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 
 - ¿Qué es un array?
-    
-    Un array es una colecciones de elementos con valores de una sola variable. Se escriben dentro de [ … ], separado por una coma.
+    (Lista de elementos)
+    Un array es una colecciones de elementos con diferentes valores o iguales dependiendo el caso un ejemplo seria
+    ```jsx
+    var array = ["carro", "bicicleta", 3, 5, "calculadora"]
+    ```
     
 - ¿Qué es un objeto?
     
     Es una colección de datos relacionados con múltiples variables con sus valores. 
+    ```jsx
+    // Ejemplo de objeto en JS
+    var perro = {
+    	nombre: "Tyson",
+	raza: "Caniche Toy",
+	edad: 10
+	};
+    ```
     
 - ¿Cuándo es mejor usar objetos o arrays?
     
-    Ocupamos objetos cuando el conjunto de elementos es muy grande y de distintos tipos de valores. 
+    Arrays: Cuando lo que haremos en un elemento es lo mismo que en todos los demas (la regla se puede incumplir).
+    Objeto: Cada valor que contenga es importante junto con sus caracteristica.
     
 - ¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
+
+Si los arrays pueden guardar objetos al igual que los objetos pueden guardar array.
 
 ### 2️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
 
@@ -315,15 +329,17 @@ readArray(myArray);
 ### 3️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
 
 ```jsx
-let myArray = ['Manchester', 'London', 'Liverpool', 'Birmingham', 'Leeds', 'Carlisle'];
-
-function readArray(array) {
-  for (let i = 0; i < array.length; i++) {
-    console.log(`${i + 1} ${array[i]}`)
-  }
+var array = ["carro", "tuna", "espejp", "calculadora"];
+function imprimirElementoPorElemento(arr){
+  console.log(arr);
 }
+var i = 0;
+while(i < array.length){
+  arr = array[i];
+  imprimirElementoPorElemento(arr);
+  i++;
+};
 
-readArray(myArray);
 ```
 
 ### 4️⃣ Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
