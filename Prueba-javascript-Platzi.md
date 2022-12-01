@@ -294,6 +294,7 @@ while(respuesta !== 4){
     ```
     
 - ¿Qué es un objeto?
+[Mas informacion sobre arrays](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array#propiedades_est%C3%A1ticas)
     
     Es una colección de datos relacionados con múltiples variables con sus valores. 
     ```jsx
