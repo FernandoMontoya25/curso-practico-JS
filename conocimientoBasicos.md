@@ -1,4 +1,4 @@
-> # Como conectar html con JavaScript
+>  # 1. Como conectar html con JavaScript
 
 ```jsx
 <!DOCTYPE html>
@@ -11,8 +11,82 @@
 </head>
 <body>
     <h1>Manipulacion del DOM basica</h1>
-    <!--Script: Nos ayuda a conectar html con JS-->
+    //Script: Nos ayuda a conectar html con JS
     <script src="./script.js"></script> 
 </body>
 </html>
 ```
+> # 2. Funciones de JS y su uso
+```jsx
+console.log(document.getElementsByTagName('li')); //Accede al elemento por medio de la etiqueta 'li'. 
+console.log(document.getElementsByClassName('card')); //Accede al elemento por medio de la clase 'card'.
+console.log(document.getElementsByName('nombre')); //Accede a los elementos por medio del atributo "name" del documento, name se utiliza en los formularios.
+console.log(document.getElementById('menu')); //Accede a los elementos por medio del identificador tipo id con el nombre "menu".
+console.log(document.querySelector('a')); //Accede al elemento por medio de la etiqueta 'a'. Accede solo a el primer elemento de tipo 'a' del documento.
+console.log(document.querySelectorAll('a')); //Accede al elemento por medio de la etiqueta a. Accede a todos los elemento de tipo 'a' del documento.
+console.log(document.querySelector('.card')); //Accede al elemento por medio de la clase '.card".
+console.log(document.querySelector('#card')); //Accede a los elementos por medio del identificador tipo id con el nombre #card'.
+console.log(document.querySelectorAll('.card')[2]); //Accede al elemento por medio de la clase card' y busca el elemento en la posicion indicada.
+console.log(document.querySelectorAll('.menu li')); //Accede a todos los elementos 'li' que tengan la clase 'menu'.
+```
+> # 3. Modificar HTML desde JavaScript
+1. Modificando etiquetas tipo h1
+```jsx
+h1.innerHTML = "Texto de broma <br> muchas bromas"; // Se incorpora codigo
+h1.innerText = "Texto de broma <br> muchas bromas"; // Se incorpora texto
+```
+2. Modificar un atributo
+```jsx
+console.log(h1.getAttribute('class')); // Nos enseña que clase tienen nuestro h1
+h1.setAttribute('class','rojo'); // Nos modifico el nombre de nuestro atributo de class
+h1.classList.add('rojo'); // Nos agrega una clase
+h1.classList.remove('verde');  // Nos elimina una clase
+```
+3. Modificar un input
+```jsx
+input.value = "456"; // Nos modifico el value de nuestro input
+input.placeholder = "Texto de prueba"; // Nos modifico nuestro placeholder
+```
+> # 4. Eventos
+```jsx
+// onchange: Escucha cuando el usuario termino de ponerle informacion al input
+<input onchange="console.log('Cambio el input')" id="calculo2" placeholder="Escribe algo aquí" />
+
+//onclick: Escucha cuando le dan click al boton
+<button id="btnCalcular" onclick="console.log('click dek btn')">Calcular</button>
+```
+### Cuando queremos que nuestro codigo JS escuche un evento que pasa en nuestro codigo html como por ejemplo el click de un boton, el llenado de un cuestionario o de un input tenemos dos opciones. 
+1. Ponerle en html el escuchador de eventos como por ejemplo el onchange o el onclick pero tendriamos que ponerles muchos escuchadores de evento*/
+2. Podemos crear una funcion en js que realice todas las tareas que queremos que realice todos los botones de cierto tipo y simplemente se la incorporamos al boton que queremos que realice ese tipo de tareas como si fuera un tipo class
+```jsx
+//Ejemplo 1 del boton - mala idea
+<button id="btnCalcular" onclick="console.log('click dek btn')">Calcular</button>
+
+//Ejemplo 2 del boton - Buena idea
+// 1. Creamos la funcion en JS de lo que queremos que realice nuestro boton
+function btnOnClick(){
+    console.log('Escuchando el evento del click');
+    };
+// 2. La funcion que creamos en JS se la incorporamos a nuestro o nuestros botones como si fuera un tipo class
+<button id="btnCalcular" onclick="btnOnClick()">Calcular</button>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
