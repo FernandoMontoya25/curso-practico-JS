@@ -54,6 +54,12 @@ input.placeholder = "Texto de prueba"; // Nos modifico nuestro placeholder
 
 //onclick: Escucha cuando le dan click al boton
 <button id="btnCalcular" onclick="console.log('click dek btn')">Calcular</button>
+
+// addEventListener: Nos ayuda a poner un escuchador de eventos ya no en html si no directamente en JS unicamente necesita dos argumentos.
+// form: Es donde vamos a escuchar el evento
+// submit: El nombre del evento
+// sumarInputValues: Tarea de JS que queremos que realize cuando escuche el evento
+form.addEventListener('submit', sumarInputValues)'
 ```
 ### Cuando queremos que nuestro codigo JS escuche un evento que pasa en nuestro codigo html como por ejemplo el click de un boton, el llenado de un cuestionario o de un input tenemos dos opciones. 
 1. Ponerle en html el escuchador de eventos como por ejemplo el onchange o el onclick pero tendriamos que ponerles muchos escuchadores de evento*/
