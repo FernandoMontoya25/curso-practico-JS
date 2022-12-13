@@ -11,10 +11,9 @@
       </ul>
     </div>
     
-    ![image](https://user-images.githubusercontent.com/66334502/207331655-13d9dc22-5049-4719-9a46-d85cf2373aef.png)
 
     
-// Barra de menu
+// Barra de menu que queremos que este apareciendo
 <div class="desktop-menu inactive">
         <ul>
           <li>
