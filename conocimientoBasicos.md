@@ -76,6 +76,20 @@ function btnOnClick(){
 // 2. La funcion que creamos en JS se la incorporamos a nuestro o nuestros botones como si fuera un tipo class
 <button id="btnCalcular" onclick="btnOnClick()">Calcular</button>
 ```
+### Otro ejemplo para cuando queremos crear un evento
+```jsx
+// Creamos nuestras variables
+const menuEmail = document.querySelector('.navbar-email');
+const desktopMenu = document.querySelector('.desktop-menu');
+
+// Creamos el evento del click y la funcion que queremos que realice al momento de escuchar el evento
+menuEmail.addEventListener('click', toggleDesktopMenu);
+
+// Creamos la funcion que queremos que realice
+function toggleDesktopMenu(){
+     desktopMenu.classList.toggle('inactive'); // toggle: Es como una palanca algo que queremos que realice cuando precionamos click y que tiene que hacer cuando volvemos a hacer click por ejemplo una barra de menu la quita y la pone en cada click
+ }
+```
 
 
 
