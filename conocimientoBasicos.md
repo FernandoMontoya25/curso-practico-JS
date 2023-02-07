@@ -18,16 +18,26 @@
 ```
 > # 2. Funciones de JS y su uso
 ```jsx
-console.log(document.getElementsByTagName('li')); //Accede al elemento por medio de la etiqueta 'li'. 
-console.log(document.getElementsByClassName('card')); //Accede al elemento por medio de la clase 'card'.
-console.log(document.getElementsByName('nombre')); //Accede a los elementos por medio del atributo "name" del documento, name se utiliza en los formularios.
-console.log(document.getElementById('menu')); //Accede a los elementos por medio del identificador tipo id con el nombre "menu".
-console.log(document.querySelector('a')); //Accede al elemento por medio de la etiqueta 'a'. Accede solo a el primer elemento de tipo 'a' del documento.
-console.log(document.querySelectorAll('a')); //Accede al elemento por medio de la etiqueta a. Accede a todos los elemento de tipo 'a' del documento.
-console.log(document.querySelector('.card')); //Accede al elemento por medio de la clase '.card".
-console.log(document.querySelector('#card')); //Accede a los elementos por medio del identificador tipo id con el nombre #card'.
-console.log(document.querySelectorAll('.card')[2]); //Accede al elemento por medio de la clase card' y busca el elemento en la posicion indicada.
-console.log(document.querySelectorAll('.menu li')); //Accede a todos los elementos 'li' que tengan la clase 'menu'.
+ //Accede al elemento por medio de la etiqueta 'li'. 
+console.log(document.getElementsByTagName('li'));
+//Accede al elemento por medio de la clase 'card'.
+console.log(document.getElementsByClassName('card')); 
+//Accede a los elementos por medio del atributo "name" del documento, name se utiliza en los formularios.
+console.log(document.getElementsByName('nombre'));
+//Accede a los elementos por medio del identificador tipo id con el nombre "menu".
+console.log(document.getElementById('menu'));
+//Accede al elemento por medio de la etiqueta 'a'. Accede solo a el primer elemento de tipo 'a' del documento.
+console.log(document.querySelector('a'));
+//Accede al elemento por medio de la etiqueta a. Accede a todos los elemento de tipo 'a' del documento.
+console.log(document.querySelectorAll('a'));
+//Accede al elemento por medio de la clase '.card".
+console.log(document.querySelector('.card'));
+//Accede a los elementos por medio del identificador tipo id con el nombre #card'.
+console.log(document.querySelector('#card'));
+//Accede al elemento por medio de la clase card' y busca el elemento en la posicion indicada.
+console.log(document.querySelectorAll('.card')[2]);
+//Accede a todos los elementos 'li' que tengan la clase 'menu'.
+console.log(document.querySelectorAll('.menu li'));
 ```
 > # 3. Modificar HTML desde JavaScript
 1. Modificando etiquetas tipo h1
